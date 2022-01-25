@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  localstack:
+    image: localstack/localstack
+    environment:
+      AWS_DEFAULT_REGION: "us-west-2"
+      SERVICES: "s3"
+      EDGE_PORT: "4566"
+    ports:
+      - "4566:4566"
