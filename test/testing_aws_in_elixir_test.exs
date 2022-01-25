@@ -1,4 +1,4 @@
-defmodule TestingAwsInElixirTest do
+defmodule TestinAWSInElixirTest do
   use ExUnit.Case
 
   setup do
@@ -31,7 +31,7 @@ defmodule TestingAwsInElixirTest do
     ExAws.request!(ExAws.S3.put_object("test-bucket", "my/random/file", contents))
 
     # Now, we run our code and assert on its behavior.
-    TestingAwsInElixir.download_file_from_s3!("test-bucket", "my/random/file", to: "localfile")
+    TestinAWSInElixir.download_file_from_s3!("test-bucket", "my/random/file", to: "localfile")
     assert File.read!("localfile") == contents
   end
 end

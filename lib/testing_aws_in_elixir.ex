@@ -1,4 +1,4 @@
-defmodule TestingAwsInElixir do
+defmodule TestinAWSInElixir do
   @ex_aws_mod Application.compile_env(:testing_aws_in_elixir, [:test_doubles, :ex_aws], ExAws)
 
   @spec download_file_from_s3!(String.t(), String.t(), keyword) :: :ok

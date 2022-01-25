@@ -1,4 +1,4 @@
-defmodule TestingAwsInElixir.MixProject do
+defmodule TestinAWSInElixir.MixProject do
   use Mix.Project
 
   def project do
